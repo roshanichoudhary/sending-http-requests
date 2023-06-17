@@ -18,7 +18,9 @@ function App() {
       if (!response.ok) {
         throw Error('Something went wrong......');
       }
+
       let data = await response.json();
+
       const arr = data.results;
 
       data = arr.map(movie => {
